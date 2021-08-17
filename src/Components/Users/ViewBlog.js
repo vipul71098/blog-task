@@ -19,7 +19,7 @@ const ViewBlog = () => {
   const intialLoad = (e) => {
     axios
       .get(
-        `https://dapper-magic-screwdriver.glitch.me/api/v1/blog/getsingleblog/${id}`
+        `https://blog-api-task-node.herokuapp.com/api/v1/blog/getsingleblog/${id}`
       )
       .then((response) => {
         setblog(response.data);
@@ -33,7 +33,7 @@ const ViewBlog = () => {
     e.preventDefault();
     axios
       .put(
-        `https://dapper-magic-screwdriver.glitch.me/api/v1/blog/updateblog/${id}`,
+        `https://blog-api-task-node.herokuapp.com/api/v1/blog/updateblog/${id}`,
         blog
       )
       .then(() => alert('comment Udated.......'))
