@@ -2,8 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./Components/Pages/Home";
 import Navbar from "./Components/Layout/Navbar";
-import AddBlogs from "./Components/Users/AddBlogs";
-import ViewBlog from "./Components/Users/ViewBlog";
+import AddBlogs from "./Components/Blogs/AddBlogs";
+import ViewBlog from "./Components/Blogs/ViewBlog";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
