@@ -11,7 +11,7 @@ const Home = () => {
   }, []);
   const onloadData = async () => {
     await axios
-      .get("https://dapper-magic-screwdriver.glitch.me/api/v1/blog/getblog")
+      .get("https://blog-api-task-node.herokuapp.com/api/v1/blog/getblog")
       .then((response) => {
         setblog(response.data.reverse());
       })
@@ -26,7 +26,7 @@ const Home = () => {
   const deleteblog = (id) => {
     axios
       .delete(
-        `https://dapper-magic-screwdriver.glitch.me/api/v1/blog/deleteblog/${id}`
+        `https://blog-api-task-node.herokuapp.com/api/v1/blog/deleteblog/${id}`
       )
       .then((response) => {
         onloadData();
