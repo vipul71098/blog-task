@@ -44,7 +44,7 @@ const AddBlogs = () => {
     e.preventDefault();
     axios
       .post(
-        "https://dapper-magic-screwdriver.glitch.me/api/v1/blog/insertblog",
+        "https://blog-api-task-node.herokuapp.com/api/v1/blog/insertblog",
         fd
       )
       .then(() => history.push("/"))
